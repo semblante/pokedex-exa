@@ -1,19 +1,10 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import PokemonList from './components/PokemonList';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App:React.FC = () => {
   return (
-    <>
-      <h1>Pokedex</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-
-    </>
+    <PokemonList/>
   )
 }
 
